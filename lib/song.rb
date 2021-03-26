@@ -29,7 +29,7 @@ class Song
   
   def self.genre_count
     @@genres.map do |genre|
-      @@genre_count["#{genre}"]=
+      @@genre_count["#{genre}"]+=1
     end
     @@genre_count
   end
