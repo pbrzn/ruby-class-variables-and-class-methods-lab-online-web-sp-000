@@ -37,11 +37,11 @@ class Song
   end
   
   def self.artist_count
-    @genre_counter=0
-    @@genres.map do |genre|
-      @genre_counter+=1
-      @@genre_count["#{genre}"]=@genre_counter
+    @artist_counter=0
+    @@artists.map do |artist|
+      @artist_counter+=1
+      @@artist_count["#{artist}"]=@artist_counter
     end
-    @@genre_count
+    @@artist_count
   end
 end
